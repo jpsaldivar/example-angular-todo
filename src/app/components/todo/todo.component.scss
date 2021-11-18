@@ -1,0 +1,9 @@
+:host {
+  .complete {
+    text-decoration: line-through !important;
+  }
+  .delete-icon {
+    cursor: pointer;
+    margin-left: 0.5rem;
+  }
+}

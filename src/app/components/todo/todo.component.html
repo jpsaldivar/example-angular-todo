@@ -1,0 +1,16 @@
+<mat-list-item [class.complete]="toDo?.complete">
+  <mat-checkbox
+    [checked]="toDo.complete"
+    (click)="this.handleClick()"
+    id="todo-checkbox"
+    >{{ toDo?.task }}</mat-checkbox
+  >
+  <mat-icon
+    aria-hidden="false"
+    aria-label="Example home icon"
+    class="delete-icon"
+    id="remove-todo"
+    (click)="this.handleRemove()"
+    >delete</mat-icon
+  >
+</mat-list-item>
